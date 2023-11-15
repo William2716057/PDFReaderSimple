@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PDFReaderSimple", "PDFReaderSimple\PDFReaderSimple.pyproj", "{BB2BFA43-2A45-40B6-A4A9-74F15F122388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB2BFA43-2A45-40B6-A4A9-74F15F122388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB2BFA43-2A45-40B6-A4A9-74F15F122388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {827412B5-A285-4678-8803-E08D36868D76}
+	EndGlobalSection
+EndGlobal
