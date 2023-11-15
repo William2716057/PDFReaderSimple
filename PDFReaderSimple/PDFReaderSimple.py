@@ -1,6 +1,7 @@
 import PyPDF2
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 from collections import Counter 
 cnt = Counter()
 #xpoints = np.array([0, 6])
@@ -27,8 +28,22 @@ if __name__ == '__main__':
     print(PDFText)
 
 
-#for text in PDFText.split():
-    #cnt[text] += 1
+for text in PDFText.split():
+    cnt[text] += 1
     #most common words
-    #cnt.most_common(10)
+    cnt.most_common(10)
     #print(cnt.most_common)
+
+wordFreq = pd.DataFrame(cnt.most_common(15),
+                        columns=['words', 'count'])
+wordFreq.head()
+
+fig, ax = plt.subplots(figsize=(12,8))
+wordFreq.sort_values(by='count').plot.line(x='words',
+                                           y='count',
+                                           ax=ax,
+                                           color="brown")
+ax.set_title("common words found")
+plt.show()
+
+
