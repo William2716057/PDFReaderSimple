@@ -1,7 +1,8 @@
 import PyPDF2
 import matplotlib.pyplot as plt
 import numpy as np
-
+from collections import Counter 
+cnt = Counter()
 #xpoints = np.array([0, 6])
 #ypoints = np.array([0, 250])
 
@@ -22,5 +23,12 @@ def ExtractText(pdf_file_path: str) -> str:
         return Total
 
 if __name__ == '__main__':
-    pdf_text = ExtractText('sample.pdf')
-    print(pdf_text)
+    PDFText = ExtractText('sample.pdf')
+    print(PDFText)
+
+
+#for text in PDFText.split():
+    #cnt[text] += 1
+    #most common words
+    #cnt.most_common(10)
+    #print(cnt.most_common)
